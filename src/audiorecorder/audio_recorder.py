@@ -1,6 +1,7 @@
+from pydantic import BaseModel
 import sounddevice as sd
 import soundfile as sf
-
+import numpy as np
 
 class AudioRecorder():
     """
@@ -23,7 +24,7 @@ class AudioRecorder():
         return kwargs
 
 
-    def record_until_enter_key_pressed():
+    def record_until_enter_key_pressed(self):
         print("Recording... Press Enter to stop.")
         
         audio = []
@@ -33,7 +34,7 @@ class AudioRecorder():
             audio.append(indata.copy())
 
         with sd.InputStream(
-            callback=_callback
+            callback=_callback,
             **kwargs
         ):
             input()
