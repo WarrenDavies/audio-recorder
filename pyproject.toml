@@ -1,5 +1,5 @@
 [project]
-name = "audiorecorder"
+name = "audiograb"
 version = "0.1.0"
 description = ""
 authors = [{ name = "Warren Davies"}]
@@ -7,7 +7,7 @@ readme = "README.md"
 homepage = "https://github.com/WarrenDavies/audio-recorder"
 repository = "https://github.com/WarrenDavies/audio-recorder"
 packages = [
-    { include = "audiorecorder", from = "src" }
+    { include = "audiograb", from = "src" }
 ]
 requires-python = ">=3.11,<3.13"
 

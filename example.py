@@ -1,4 +1,4 @@
-from audiorecorder.audio_recorder import AudioRecorder
+from audiograb.audio_recorder import AudioRecorder
 
 config = {
     "sd_default_device": 7
